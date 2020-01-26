@@ -83,13 +83,3 @@ while(1):
         pass
     if cv2.waitKey(30) == ord('q'):
         break
-
-'''   if n==1:
-        low=np.array([115,43,46])
-        up=np.array([125,255,255])
-    if n==2:
-        low = np.array([35, 43, 25])
-        up = np.array([60, 255, 255])
-    if n==3:
-        low = np.array([5, 43, 25])
-        up = np.array([15, 255, 255])'''
