@@ -1,0 +1,55 @@
+更新软件库
+sudo apt-get update
+
+安装 mysql
+sudo apt-get install mysql-server
+
+/**********************数据库操作**********************/
+以空密码登陆
+sudo mysql -uroot (知道密码的话在后面加 -p123456)
+
+数据库中使用
+#连接数据库
+use mysql;
+
+修改密码为123456，自己定
+UPDATE user SET password=PASSWORD('123456') WHERE user='root';
+
+设置远程访问mysql
+更新user表
+update user set host='%' where user='root' and host='localhost';
+
+为root授权远程登陆
+grant all privileges  on *.* to root@'%' identified by "password";
+
+刷新
+flush privileges;
+
+/**********************文件配置**********************/
+修改监听设置
+sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+修改bind-address = 127.0.0.1一行中的ip,修改为0.0.0.0
+改完之后ctrl+x退出，Y保存，回车
+
+/**********************开启3306端口远程访问**********************/
+安装ufw
+sudo apt-get install ufw
+
+启用ufw
+sudo ufw enable
+sudo ufw default deny
+
+开启3306、22（ssh端口）端口
+ufw allow 3306 
+ufw allow 22 
+注意：如果不开启22端口，下次启动树莓派时，系统的22端口会禁用，不能使用ssh登录树莓派
+
+/**********************下载PyMySQL 驱动**********************/
+pip3 install PyMySQL
+
+/**********************下载schedule时间函数**********************/
+pip install schedule
+
+/**********************参考资料**********************/
+https://www.runoob.com/python3/python3-mysql.html
+

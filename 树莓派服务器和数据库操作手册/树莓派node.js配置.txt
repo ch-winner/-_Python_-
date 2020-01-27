@@ -1,0 +1,5 @@
+1、先命令：curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+2、然后安装：sudo apt-get install -y nodejs
+
+3、查看版本信息：nodejs -v

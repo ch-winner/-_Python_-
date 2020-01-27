@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<meta http-equiv="Refresh" content="10";/>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Responsive Html5 Templates">
+    <meta name="author" content="">
+	
+    <title>在线监控系统</title>
+	
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Custom CSS -->
+    <link href="../static/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="../static/css/lightbox.css">
+	<link rel="stylesheet" href="../static/fonts/stylesheet.css">
+	
+	<!-- Custom Fonts -->
+    <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Owl Carousel Assets -->
+    <link href="../static/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../static/owl-carousel/owl.theme.css" rel="stylesheet">
+	
+	<!-- jQuery and Modernizr-->
+	<script src="../static/js/jquery-2.1.1.js"></script>
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="index-page">
+	<form method='POST' action='/show_data#monitoring'>
+	<div class="custom-banner">
+		<header class="main-header">
+			<!-- /////////////////////////////////////////Navigation -->
+			<nav id="menu" class="navbar container">
+				<div class="">
+					<div class="navbar-header">
+						<button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+						<a href="../static/index.html" class="navbar-brand visible-xs">恒温箱</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="show_data.html">主页</a></li>
+							<li><a href="#monitoring">在线监控</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">组件设备 <i class="fa fa-chevron-down"></i></a>
+								<div class="dropdown-menu" style="margin-left: -203.625px;">
+									<div class="dropdown-inner">
+										<ul class="list-unstyled">
+											<li><a href="#">树莓派3b+</a></li>
+											<li><a href="#">Text 302</a></li>
+											<li><a href="#">Text 303</a></li>
+											<li><a href="#">Text 304</a></li>
+											<li><a href="#">Text 305</a></li>
+										</ul>
+										<ul class="list-unstyled">
+											<li><a href="#">Text 306</a></li>
+											<li><a href="#">Text 307</a></li>
+											<li><a href="#">Text 308</a></li>
+											<li><a href="#">Text 309</a></li>
+											<li><a href="#">Text 310</a></li>
+										</ul>
+										<ul class="list-unstyled">
+											<li><a href="#">Text 311</a></li>
+											<li><a href="#">Text 312</a></li>
+											<li><a href="#">Text 313</a></li>
+											<li><a href="#">Text 314</a></li>
+											<li><a href="#">Text 315</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li><a href="#Control">远程控制</a></li>
+							<li><a href="#about">关于我们</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Navigation -->
+			
+			<!-- Carousel -->
+			<div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<!-- Static Header -->
+						<div class="header-text ">
+							<div class="col-md-12">
+								<h1>
+								<span>Raspberry Pi-based</span> Thermostat</h1>
+							  <p>&nbsp;</p>
+								<p>&nbsp; </p>
+								<hr class="line">
+								<p>基于树莓派的恒温箱</p>
+								<p>在线监视控制系统</p>
+							</div>
+						</div><!-- /header-text -->
+					</div>
+					<div class="item">
+						<!-- Static Header -->
+						<div class="header-text">
+							<div class="col-md-12">
+								<h1>
+									<span>恒温箱<br>可视化界面</span>
+									 
+								</h1>
+								<hr class="line">
+								<p>设计团队成员：李瑞峰 王愉天 <br>邹鑫伟 张世浩 刘子斌</p>
+								<a href="https://cn.bing.com/?mkt=zh-CN" class="btn btn-primary btn-header">Find Out More</a>
+							</div>
+						</div><!-- /header-text -->
+					</div>
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div><!-- /carousel -->
+			
+		</header>
+	</div>
+	<!-- /Section: intro -->
+	
+	<!-- /////////////////////////////////////////Content -->
+	<div id="page-content">
+	
+		<!-- ////////////Content Box 01 -->
+		<section class="box-content box-1" id="service">
+			<div class="container"  id="monitoring">
+				<div class="row">
+					<div class="headinging">
+						<h2 class="title">实时温湿度</h2>
+						<table align="center">
+							<tr align="left"><td class="sub1">当前温度(1):</td><td class="sub">{{ temperature1 }} °C</td></tr>
+							<tr align="left"><td class="sub1">当前湿度(1):</td><td class="sub">{{ humidity1 }} %</td></tr>
+							<tr align="left"><td class="sub1">当前温度(2):</td><td class="sub">{{ temperature2 }} °C</td></tr>
+							<tr align="left"><td class="sub1">当前湿度(2):</td><td class="sub">{{ humidity2 }} %</td></tr>
+						</table>
+						<h2 class="title">目标控制温湿度</h2>
+						<table align="center">
+    						<tr align="left"><td class="sub1">目标温度:</td><td class="sub">{{ c_temperature }} °C</td></tr>
+    						<tr align="left"><td class="sub1">目标湿度:</td><td class="sub">{{ c_humidity }} %</td></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- ////////////Content Box 06 -->
+		<section class="box-content box-6">
+			<div class="container">
+				<div class="row" >
+					<div class="heading">
+						<hr class="line">
+						<h3 class="sub">Simulated indoor temperature control</h3>
+						<h1 class="title">Monitoring system design</h1>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+				<!-- ////////////Content Box 04 -->
+		<section class="box-content box-4 box-style-2">
+			<div class="container" id="Control">
+				<div class="row">
+					<div class="heading">
+						<h3 class="sub">Form</h3>
+						<h1 class="title">Reservation</h1>
+						<h3 class="title1">目标值</h3>
+						<div class="headingding">
+							<table align="center">
+								<tr><td class="sub">温度:</td><td><input name='c_temperature' type='TEXT' value=''></td> 
+								</tr>
+								<tr><td class="sub">湿度:</td><td><input name='c_humidity' type='TEXT' width='60' value=''></td> 
+								</tr>
+							</table>
+							<p><input value='提交' type='SUBMIT'></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<p><i>Please book in advance to get the best service from us. We wishing you a great day.<br>Thanks!</i></p>
+					<form class="reservation" name="form-reservation" method="post" action="">
+						<div class="row"></div>
+						<div class="row">
+						  <div class="col-md-3">
+							  <div class="form-group"></div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		
+		
+	</div>
+		<!-- ////////////Content Box 03 -->
+		<section class="box-content box-3 box-style-1">
+			<div class="container" id="about">
+				<div class="row">
+					<div class="heading">
+						<h3 class="sub">Something</h3>
+						<h1 class="title">About Me</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h2>Forever free, open source, and easy to use.</h2>
+						<p class="lead">
+							The world’s most <strong>powerful website builder</strong> which takes the “live website creation” to next level. Massive Dynamic is <strong>created by a team of 12</strong> experienced professional developers and designers. The team has focused on user experience and ease of use in every aspect of this project.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+	
+	<!-- FOOTER -->
+	<footer>
+		<div class="wrap-footer"></div>
+	</footer>
+
+    <!-- Core JavaScript Files -->  	 
+    <script src="../static/js/bootstrap.min.js"></script>
+	
+	<!-- Light Box -->
+	<script src="../static/js/lightbox-plus-jquery.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="../static/js/isotope.min.js"></script>
+	<script>
+	jQuery(document).ready(function($) {
+		var myTheme = window.myTheme || {},
+		$win = $( window );
+		myTheme.Isotope = function () {
+			// 4 column layout
+			var isotopeContainer = $('.isotopeContainer');
+			if( !isotopeContainer.length || !jQuery().isotope ) return;
+			$win.load(function(){
+				isotopeContainer.isotope({
+					itemSelector: '.isotopeSelector'
+				});
+				$('.isotopeFilters').on( 'click', 'a', function(e) {
+					$('.isotopeFilters').find('.active').removeClass('active');
+					$(this).parent().addClass('active');
+					var filterValue = $(this).attr('data-filter');
+					isotopeContainer.isotope({ filter: filterValue });
+					e.preventDefault();
+				});
+				
+			});
+		};
+		myTheme.Isotope();
+
+	});</script>
+	
+	<!-- carousel -->
+	<script src="../static/js/circletype.min.js"></script>
+	<script src="../static/js/plugins.js"></script>
+    <script>
+		$('#logo').circleType({fluid:true,radius: 360});
+	</script>
+	</form>
+</body>
+
+</html>
